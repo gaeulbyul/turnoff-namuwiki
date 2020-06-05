@@ -6,7 +6,6 @@
   "permissions": ["tabs", "storage", "*://*/*", "webRequest", "webRequestBlocking"],
   "background": {
     "scripts": [
-      "polyfill/browser-polyfill.min.js",
       "lib/bg.js"
     ],
     "persistent": true

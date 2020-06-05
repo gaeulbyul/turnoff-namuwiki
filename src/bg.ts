@@ -1,3 +1,5 @@
+import '../node_modules/webextension-polyfill/dist/browser-polyfill.js';
+
 /* = Load Config Logic = */
 async function loadConfig(): Promise<ConfigInterface> {
     return new Promise<ConfigInterface> (
@@ -88,10 +90,10 @@ browser.tabs.onUpdated.addListener(async (tabId, info, tab) => {
                 // const searchQuery = /((?!#\?)+)[#?]/.exec(decodeURIComponent(parsed[3]))[1];
 
                 const uriAnchorParser = /[^?#]*/
-                const searchParsed = uriAnchorParser.exec(decodeURIComponent(parsed[3]));                
+                const searchParsed = uriAnchorParser.exec(decodeURIComponent(parsed[3]));
                 const searchQuery = searchParsed[0];
                 const searchURIExtra = searchParsed[0];
-                
+
                 //const langCode = /^((\w){2})/.exec(navigator.language)[1];
                 const langCode = /(가-힣)+/.test(searchQuery) ? "ko" : /^[A-z0-9 ]$/.test(searchQuery) ? "en" : /^((\w){2})/.exec(navigator.language)[1];
 

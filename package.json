@@ -8,12 +8,12 @@
   "license": "MIT",
   "dependencies": {
     "typescript": "^3.5.2",
-    "webextension-polyfill": "^0.4.0"
+    "webextension-polyfill": "^0.6.0"
   },
   "devDependencies": {
     "ts-loader": "^6.2.1",
     "web-ext-types": "^3.2.0",
-    "webpack": "^4.42.0",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },

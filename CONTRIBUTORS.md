@@ -30,7 +30,6 @@ turnoff-namuwiki는 Agile Development Cycle을 이용하고 있습니다. 따라
   * src/filter/ : 웹 사이트 별 필터 로직입니다. 구동 원리는 해당 웹페이지가 정규식으로 인식되는 경우, 해당 웹페이지를 표시하고 있는 tab에 해당 스크립트가 inject 됩니다.
   * src/interfaces : 코드 전역에서 사용하는 타입스크립트 인터페이스를 저장합니다.
 * lib/ : 일반적인 경우에는 존재하지 않지만, 컴파일 하면 생성됩니다.  
-* polyfill/ : WebExtensions 를 이용하여 Cross-Browser Extension을 제공하기 위해 저장된 polyfill 공간입니다.
 
 ## Commit message guidelines
 [Conventional Commits](https://www.conventionalcommits.org/en/)를 준수 바랍니다.
